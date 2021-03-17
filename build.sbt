@@ -3,6 +3,22 @@ def scala212 = "2.12.13"
 inThisBuild(
   List(
     organization := "org.scalameta",
+    homepage := Some(url("https://github.com/olafurpg/sbt-ci-release")),
+    licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
+    developers := List(
+      Developer(
+        "mdr",
+        "Matt Russell",
+        "noreply@github.com",
+        url("https://github.com/mdr")
+      ),
+      Developer(
+        "olafurpg",
+        "Ólafur Páll Geirsson",
+        "olafurpg@gmail.com",
+        url("https://geirsson.com")
+      )
+    ),
     scalaVersion := scala213,
     crossScalaVersions := Seq(scala213, scala212),
     scalacOptions ++= Seq("-Xlint:unused"),
