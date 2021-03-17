@@ -1,12 +1,17 @@
+> NOTE: This is a fork of https://github.com/mdr/ascii-graphs that has been updated to support Scala 2.12 and 2.13.
+
 An ASCII-art diagram library for graphs. It supports both parsing existing diagrams and rendering graphs out as an ASCII diagram.
 
 You can use it via sbt:
 
-    libraryDependencies += "com.github.mdr" %% "ascii-graphs" % "0.0.3"
+```scala
+// Scala 2.13 and Scala 2.12 are supported.
+libraryDependencies += "org.scalameta" %% "ascii-graphs" % "0.1.2"
+```
 
 # Graph layout
 
-    import com.github.mdr.ascii.layout._
+    import org.scalameta.ascii.layout._
 
     val graph = Graph(
       vertices = List(
@@ -180,7 +185,7 @@ The label's `[` or `]` bracket must be adjacent (horizontally or vertically) to 
 
 ## Usage
 
-    import com.github.mdr.ascii._
+    import org.scalameta.ascii._
     
     val diagram = Diagram("""
                  +-+             
