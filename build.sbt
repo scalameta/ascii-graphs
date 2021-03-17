@@ -22,7 +22,7 @@ commands +=
 commands +=
   Command.command("checkAll") { s =>
     "scalafmtCheckAll" :: "scalafmtSbtCheck" :: "scalafixAll --check" ::
-      "javafmtCheckAll" :: "publishLocal" :: "docs/docusaurusCreateSite" :: s
+      "javafmtCheckAll" :: "publishLocal" :: s
   }
 
 skip.in(publish) := true
