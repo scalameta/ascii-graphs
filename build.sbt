@@ -3,7 +3,6 @@ def scala212 = "2.12.13"
 inThisBuild(
   List(
     organization := "org.scalameta",
-    version := "0.1.0",
     scalaVersion := scala213,
     crossScalaVersions := Seq(scala213, scala212),
     scalacOptions ++= Seq("-Xlint:unused"),
