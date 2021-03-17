@@ -1,10 +1,5 @@
-addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.2.0")
-
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
-
-addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8")
-
-resolvers += Resolver.typesafeRepo("releases")
-
-addSbtPlugin("org.scalariform" % "sbt-scalariform" % "1.6.0")
-
+addSbtPlugin("com.geirsson" % "sbt-ci-release" % "1.5.5")
+addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.3.4")
+addSbtPlugin("ch.epfl.scala" % "sbt-bloop" % "1.4.6-21-464e4ec4")
+addSbtPlugin("com.lightbend.sbt" % "sbt-java-formatter" % "0.6.0")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.25")
