@@ -1,9 +1,11 @@
+def scala213 = "2.13.5"
+def scala212 = "2.12.13"
 inThisBuild(
   List(
     organization := "org.scalameta",
     version := "0.1.0",
-    scalaVersion := "2.13.5",
-    crossScalaVersions := Seq("2.12.13"),
+    scalaVersion := scala213,
+    crossScalaVersions := Seq(scala213, scala212),
     scalacOptions ++= Seq("-Xlint:unused"),
     javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
     scalafixDependencies +=
